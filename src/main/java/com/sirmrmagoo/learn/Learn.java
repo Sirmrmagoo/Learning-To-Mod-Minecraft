@@ -73,6 +73,7 @@ public class Learn {
         if (event.getTab() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.BLACK_OPAL);
         }else if (event.getTab() == CreativeModeTabs.COMBAT) {
+            event.accept(ModItems.SOUL_SCYTHE);
             event.accept(ModItems.TEST);
         }
 

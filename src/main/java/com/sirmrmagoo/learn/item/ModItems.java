@@ -20,11 +20,15 @@ public class ModItems {
     public static final RegistryObject<Item> TEST = ITEMS.register("test",
             () -> new SwordItem(Tiers.TEST, 5, 15f, new Item.Properties()));
 
+    public static final RegistryObject<Item> SOUL_SCYTHE = ITEMS.register("soul_scythe",
+            () -> new SwordItem(Tiers.SOUL_SCYTHE, 5, 15f, new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
 
     public static class  Tiers {
         public static final Tier TEST = new ForgeTier(2, 150, 50f, 5, 500,null, () -> Ingredient.of(ItemStack.EMPTY));
+        public static final Tier SOUL_SCYTHE = new ForgeTier(3, 800, 15f, 7, 700,null, () -> Ingredient.of(ItemStack.EMPTY));
     }
 }
